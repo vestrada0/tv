@@ -2,9 +2,9 @@
 <title>Living Room Dashboard</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
-/* Layout: 16:9 TV canvas. Clock owns the left, current weather the right, a 5-day strip along the bottom. */
+/* Layout: 16:9 TV home screen. Top band = clock + weather, body = 4x2 grid of big remote-friendly app tiles. */
 :root {
   --ink: #0f1526;
   --ink-raised: #172038;
@@ -13,6 +13,9 @@
   --dusk: #9aa6c2;
   --peach: #f4b58c;
   --rain: #7fb3e6;
+  --focus: #ffe08a;
+  --t1: #3d5bd9; --t2: #d9534f; --t3: #2f8f83; --t4: #8a4fd1;
+  --t5: #d98a2b; --t6: #2b7fc4; --t7: #c2457a; --t8: #4a8f3a;
   --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --body: "Figtree", "Segoe UI", system-ui, sans-serif;
   color-scheme: dark;
@@ -29,66 +32,84 @@ body {
 .stage {
   height: 100%;
   box-sizing: border-box;
-  padding-block: 5vh;
-  padding-inline: 4vw;
+  padding-block: 4.5vh 4vh;
+  padding-inline: 3.5vw;
   display: grid;
-  grid-template-columns: 1.35fr 1fr;
-  grid-template-rows: 1fr auto;
-  gap: 4vh 5vw;
-  transition: opacity 2s ease, transform 3s ease;
+  grid-template-rows: auto 1fr auto;
+  gap: 4vh;
+  transition: opacity 2s ease;
 }
-.stage.night { opacity: .42; }
+.stage.night { opacity: .5; }
 
-.clock { display: flex; flex-direction: column; justify-content: center; gap: 1.6vh; min-width: 0; }
-.greeting { font-size: 2.4vw; color: var(--peach); font-weight: 500; }
+/* Top band */
+.top { display: flex; justify-content: space-between; align-items: flex-end; gap: 3vw; min-width: 0; }
+.clock { display: grid; gap: .6vh; min-width: 0; }
+.greeting { font-size: 2vw; color: var(--peach); font-weight: 600; }
 .time {
+  font-family: var(--display); font-weight: 300; font-size: 8.5vw; line-height: .9;
+  letter-spacing: -.02em; font-variant-numeric: tabular-nums;
+  display: flex; align-items: baseline; gap: .8vw;
+}
+.time .ampm { font-size: 2.2vw; font-weight: 500; color: var(--dusk); }
+.date { font-size: 1.8vw; color: var(--dusk); font-weight: 500; }
+
+.wx { display: flex; align-items: center; gap: 2vw; }
+.wx-now { display: flex; align-items: center; gap: 1vw; }
+.wx-now svg { width: 5.2vw; height: 5.2vw; }
+.temp { font-family: var(--display); font-size: 5.4vw; font-weight: 500; line-height: 1; font-variant-numeric: tabular-nums; }
+.cond { font-size: 1.5vw; font-weight: 600; }
+.sub { font-size: 1.2vw; color: var(--dusk); margin-top: .4vh; font-variant-numeric: tabular-nums; }
+.week { display: flex; gap: 1.4vw; padding-left: 2vw; border-left: 1px solid var(--line); }
+.day { display: grid; justify-items: center; gap: .3vh; }
+.day .dn { font-size: 1.1vw; color: var(--dusk); font-weight: 600; }
+.day svg { width: 2.6vw; height: 2.6vw; }
+.day .hl { font-size: 1.25vw; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* App tiles */
+.apps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.2vw;
+  min-height: 0;
+}
+.tile {
+  appearance: none; border: 0; cursor: pointer;
+  border-radius: 1.6vw;
+  background: var(--c);
+  color: #fff;
   font-family: var(--display);
-  font-weight: 300;
-  font-size: 15vw;
-  line-height: .9;
-  letter-spacing: -.02em;
-  font-variant-numeric: tabular-nums;
-  display: flex; align-items: baseline; gap: 1.2vw;
+  font-weight: 700;
+  font-size: 2.3vw;
+  letter-spacing: -.01em;
+  display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+  padding: 2vh 1.4vw;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 0 0 0 transparent;
 }
-.time .ampm { font-size: 3vw; font-weight: 500; color: var(--dusk); letter-spacing: .04em; }
-.date { font-size: 2.6vw; color: var(--dusk); font-weight: 500; }
-
-.now {
-  align-self: center;
-  background: var(--ink-raised);
-  border: 1px solid var(--line);
-  border-radius: 2.2vw;
-  padding: 4vh 2.6vw;
-  display: grid;
-  gap: 2vh;
-  min-width: 0;
+.tile::before {
+  content: ""; position: absolute; right: -2vw; top: -2vw;
+  width: 9vw; height: 9vw; border-radius: 50%;
+  background: rgba(255,255,255,.13);
 }
-.label { font-size: 1.15vw; letter-spacing: .14em; text-transform: uppercase; color: var(--dusk); font-weight: 600; }
-.now-main { display: flex; align-items: center; gap: 1.6vw; }
-.now-main svg { width: 7vw; height: 7vw; flex: none; }
-.temp { font-family: var(--display); font-size: 8vw; font-weight: 500; line-height: 1; font-variant-numeric: tabular-nums; }
-.cond { font-size: 2.2vw; font-weight: 500; }
-.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1vw; border-top: 1px solid var(--line); padding-top: 2vh; }
-.fact span { display: block; }
-.fact .k { font-size: 1.05vw; color: var(--dusk); letter-spacing: .08em; text-transform: uppercase; }
-.fact .v { font-size: 1.9vw; font-weight: 600; font-variant-numeric: tabular-nums; margin-top: .4vh; }
-
-.week {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  border-top: 1px solid var(--line);
-  padding-top: 3vh;
+.tile .tag { font-family: var(--body); font-size: 1.05vw; font-weight: 600; opacity: .85; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .6vh; }
+.tile:focus-visible, .tile:focus, .tile:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 0 .45vw var(--focus), 0 1.4vw 3vw rgba(0,0,0,.45);
+  z-index: 1;
 }
-.day { display: grid; justify-items: start; gap: .8vh; padding-inline: 1.2vw; border-left: 1px solid var(--line); }
-.day:first-child { border-left: 0; padding-left: 0; }
-.day .dn { font-size: 1.5vw; font-weight: 600; }
-.day svg { width: 3.4vw; height: 3.4vw; }
-.day .hl { font-family: var(--display); font-size: 2.2vw; font-variant-numeric: tabular-nums; }
-.day .hl small { color: var(--dusk); font-size: .7em; margin-left: .5vw; }
-.day .pop { font-size: 1.2vw; color: var(--rain); min-height: 1.4em; }
 
-.note { position: fixed; right: max(2vw, env(safe-area-inset-right, 0px)); bottom: max(1.5vh, env(safe-area-inset-bottom, 0px)); font-size: .95vw; color: var(--dusk); opacity: .7; }
+.foot { display: flex; justify-content: space-between; align-items: center; font-size: 1vw; color: var(--dusk); }
+.toast {
+  position: fixed; left: 50%; bottom: max(6vh, env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  background: var(--ink-raised); border: 1px solid var(--line);
+  padding: 1.4vh 2vw; border-radius: 99px; font-size: 1.3vw; font-weight: 600;
+}
 
 svg .sun { fill: var(--peach); }
 svg .cloud { fill: var(--sky); opacity: .9; }
@@ -99,60 +120,124 @@ svg .fog { stroke: var(--dusk); stroke-width: 5; stroke-linecap: round; }
 
 @media (max-width: 760px), (orientation: portrait) {
   body { overflow: auto; }
-  .stage { grid-template-columns: 1fr; height: auto; padding-inline: 0; gap: 4vh; }
-  .greeting { font-size: 1.2rem; }
-  .time { font-size: 5.5rem; }
-  .time .ampm { font-size: 1.2rem; }
-  .date { font-size: 1.2rem; }
-  .now { border-radius: 18px; padding: 20px; }
-  .label { font-size: .75rem; }
-  .now-main svg { width: 72px; height: 72px; }
-  .temp { font-size: 3.6rem; }
-  .cond { font-size: 1.15rem; }
-  .fact .k { font-size: .7rem; }
-  .fact .v { font-size: 1.1rem; }
-  .week { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  .day { padding-inline: 6px; }
-  .day .dn { font-size: .85rem; }
-  .day svg { width: 32px; height: 32px; }
-  .day .hl { font-size: 1.05rem; }
-  .day .hl small { display: block; margin: 0; }
-  .day .pop { font-size: .75rem; }
-  .note { position: static; display: block; font-size: .75rem; padding-bottom: 16px; }
+  .stage { height: auto; padding-inline: 0; gap: 20px; }
+  .top { flex-direction: column; align-items: flex-start; }
+  .greeting { font-size: 1.1rem; }
+  .time { font-size: 4.5rem; } .time .ampm { font-size: 1.1rem; }
+  .date { font-size: 1.05rem; }
+  .wx { flex-wrap: wrap; gap: 14px; }
+  .wx-now svg { width: 56px; height: 56px; }
+  .temp { font-size: 2.8rem; } .cond { font-size: 1rem; } .sub { font-size: .8rem; }
+  .week { gap: 12px; padding-left: 0; border-left: 0; }
+  .day .dn, .day .hl { font-size: .8rem; } .day svg { width: 26px; height: 26px; }
+  .apps { grid-template-columns: repeat(2, 1fr); grid-template-rows: none; gap: 12px; }
+  .tile { min-height: 96px; font-size: 1.2rem; border-radius: 16px; padding: 14px; }
+  .tile::before { width: 80px; height: 80px; right: -20px; top: -20px; }
+  .tile .tag { font-size: .65rem; }
+  .foot, .toast { font-size: .8rem; }
+  .toast { padding: 10px 16px; }
 }
-@media (prefers-reduced-motion: reduce) { .stage { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .stage, .tile { transition: none; } }
 </style>
 
 <main class="stage" id="stage">
-  <section class="clock" aria-label="Time and date">
-    <div class="greeting" id="greeting">Good evening</div>
-    <div class="time"><span id="hm">8:30</span><span class="ampm" id="ampm">PM</span></div>
-    <div class="date" id="date">Tuesday, October 20</div>
-  </section>
-
-  <section class="now" aria-label="Current weather">
-    <div class="label">Mansfield, TX · now</div>
-    <div class="now-main">
-      <span id="nowIcon"></span>
-      <div>
-        <div class="temp" id="nowTemp">--°</div>
-        <div class="cond" id="nowCond">Loading weather</div>
+  <header class="top">
+    <div class="clock">
+      <div class="greeting" id="greeting">Good evening</div>
+      <div class="time"><span id="hm">8:30</span><span class="ampm" id="ampm">PM</span></div>
+      <div class="date" id="date">Tuesday, October 20</div>
+    </div>
+    <div class="wx" aria-label="Mansfield weather">
+      <div class="wx-now">
+        <span id="nowIcon"></span>
+        <div>
+          <div class="temp" id="nowTemp">--°</div>
+          <div class="cond" id="nowCond">Loading</div>
+          <div class="sub" id="nowSub">Mansfield</div>
+        </div>
       </div>
+      <div class="week" id="week"></div>
     </div>
-    <div class="facts">
-      <div class="fact"><span class="k">High / Low</span><span class="v" id="hilo">--</span></div>
-      <div class="fact"><span class="k">Feels like</span><span class="v" id="feels">--</span></div>
-      <div class="fact"><span class="k" id="sunLabel">Sunset</span><span class="v" id="sun">--</span></div>
-    </div>
-  </section>
+  </header>
 
-  <section class="week" id="week" aria-label="Five day forecast"></section>
+  <section class="apps" id="apps" aria-label="Apps"></section>
+
+  <footer class="foot">
+    <span>Use the arrows and press OK to open an app</span>
+    <span id="note">Weather by Open-Meteo</span>
+  </footer>
 </main>
-<div class="note" id="note">Weather by Open-Meteo</div>
+<div class="toast" id="toast" hidden></div>
 
 <script>
-const LAT = 32.5632, LON = -97.1417, TZ = "America/Chicago";
+/* ---- Apps on the home screen. Edit this list to change tiles. ----
+   pkg = the app's Fire TV package name (confirmed later from the TV). */
+const APPS = [
+  { name: "YouTube Kids", tag: "Videos",   pkg: "com.amazon.firetv.youtube.kids", color: "var(--t2)" },
+  { name: "PBS KIDS",     tag: "Learning", pkg: "org.pbskids.video",              color: "var(--t3)" },
+  { name: "Disney+",      tag: "Movies",   pkg: "com.disney.disneyplus",          color: "var(--t1)" },
+  { name: "Netflix",      tag: "Shows",    pkg: "com.netflix.ninja",              color: "var(--t7)" },
+  { name: "Prime Video",  tag: "Shows",    pkg: "com.amazon.firebat",             color: "var(--t6)" },
+  { name: "Paramount+",   tag: "Nick Jr.", pkg: "com.cbs.ott",                    color: "var(--t4)" },
+  { name: "Spotify",      tag: "Music",    pkg: "com.spotify.tv.android",         color: "var(--t8)" },
+  { name: "Settings",     tag: "Grown-ups", pkg: "com.amazon.tv.settings",        color: "var(--t5)" }
+];
 
+const LAT = 32.5632, LON = -97.1417, TZ = "America/Chicago";
+const $ = id => document.getElementById(id);
+
+/* ---- Tiles + remote navigation ---- */
+const grid = $("apps");
+grid.innerHTML = APPS.map((a, i) =>
+  `<button class="tile" id="tile${i}" data-i="${i}" style="--c:${a.color}"><span class="tag">${a.tag}</span>${a.name}</button>`
+).join("");
+const tiles = [...grid.querySelectorAll(".tile")];
+
+function toast(msg) {
+  const t = $("toast"); t.textContent = msg; t.hidden = false;
+  clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 3000);
+}
+
+function launch(app) {
+  try {
+    if (window.fully && typeof fully.startApplication === "function") {
+      fully.startApplication(app.pkg);
+      return;
+    }
+  } catch (e) {}
+  if (/Android|AFT/i.test(navigator.userAgent)) {
+    location.href = "intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=" + app.pkg + ";end";
+  } else {
+    toast(app.name + " opens when this runs on the TV");
+  }
+}
+tiles.forEach(t => t.addEventListener("click", () => launch(APPS[+t.dataset.i])));
+
+function cols() { return getComputedStyle(grid).gridTemplateColumns.split(" ").length; }
+document.addEventListener("keydown", e => {
+  const i = tiles.indexOf(document.activeElement);
+  const c = cols();
+  const moves = { ArrowRight: 1, ArrowLeft: -1, ArrowDown: c, ArrowUp: -c };
+  if (!(e.key in moves)) return;
+  e.preventDefault();
+  if (i < 0) { tiles[0].focus(); return; }
+  const n = i + moves[e.key];
+  if (n >= 0 && n < tiles.length) tiles[n].focus();
+});
+tiles[0].focus();
+
+/* ---- Clock ---- */
+function tick() {
+  const d = new Date(), h = d.getHours();
+  const parts = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }).split(" ");
+  $("hm").textContent = parts[0];
+  $("ampm").textContent = parts[1] || "";
+  $("date").textContent = d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+  $("greeting").textContent = h < 5 ? "Good night" : h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : h < 22 ? "Good evening" : "Good night";
+  $("stage").classList.toggle("night", h >= 22 || h < 6);
+}
+
+/* ---- Weather ---- */
 const ICONS = {
   sun: '<circle class="sun" cx="50" cy="50" r="20"/><g class="sun">' + [0,45,90,135,180,225,270,315].map(a => `<rect x="47" y="8" width="6" height="14" rx="3" transform="rotate(${a} 50 50)"/>`).join("") + '</g>',
   partly: '<circle class="sun" cx="38" cy="38" r="16"/><path class="cloud" d="M30 78h44a16 16 0 0 0 0-32 22 22 0 0 0-42 6 13 13 0 0 0-2 26z"/>',
@@ -163,7 +248,6 @@ const ICONS = {
   fog: '<path class="cloud" d="M24 52h52a17 17 0 0 0 0-34 23 23 0 0 0-44 7 14 14 0 0 0-8 27z"/><path class="fog" d="M22 66h56M30 80h44"/>'
 };
 const icon = k => `<svg viewBox="0 0 100 100" aria-hidden="true">${ICONS[k]}</svg>`;
-
 function describe(code) {
   if (code === 0) return ["sun", "Clear"];
   if (code === 1) return ["sun", "Mostly clear"];
@@ -171,93 +255,46 @@ function describe(code) {
   if (code === 3) return ["cloud", "Cloudy"];
   if (code === 45 || code === 48) return ["fog", "Foggy"];
   if (code >= 51 && code <= 57) return ["rain", "Drizzle"];
-  if ((code >= 61 && code <= 67) || (code >= 80 && code <= 82)) return ["rain", code >= 65 && code !== 80 ? "Heavy rain" : "Rain"];
+  if ((code >= 61 && code <= 67) || (code >= 80 && code <= 82)) return ["rain", "Rain"];
   if ((code >= 71 && code <= 77) || code === 85 || code === 86) return ["snow", "Snow"];
-  if (code >= 95) return ["storm", "Thunderstorms"];
+  if (code >= 95) return ["storm", "Storms"];
   return ["cloud", "Cloudy"];
 }
-
-const fmtTime = iso => new Date(iso).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: TZ });
-
-function tick() {
-  const d = new Date();
-  const h = d.getHours();
-  const parts = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }).split(" ");
-  document.getElementById("hm").textContent = parts[0];
-  document.getElementById("ampm").textContent = parts[1] || "";
-  document.getElementById("date").textContent = d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
-  document.getElementById("greeting").textContent =
-    h < 5 ? "Good night" : h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : h < 22 ? "Good evening" : "Good night";
-  const stage = document.getElementById("stage");
-  stage.classList.toggle("night", h >= 22 || h < 6);
-  // Shift a few pixels each minute so nothing burns into the screen.
-  const m = d.getMinutes();
-  stage.style.transform = `translate(${(m % 5) - 2}px, ${(Math.floor(m / 5) % 5) - 2}px)`;
-}
-
 function render(w, isSample) {
   const c = w.current, dl = w.daily;
   const [k, txt] = describe(c.weather_code);
-  document.getElementById("nowIcon").innerHTML = icon(k);
-  document.getElementById("nowTemp").textContent = Math.round(c.temperature_2m) + "°";
-  document.getElementById("nowCond").textContent = txt;
-  document.getElementById("hilo").textContent = `${Math.round(dl.temperature_2m_max[0])}° / ${Math.round(dl.temperature_2m_min[0])}°`;
-  document.getElementById("feels").textContent = Math.round(c.apparent_temperature) + "°";
-  const now = Date.now();
-  const sunsetPassed = new Date(dl.sunset[0]).getTime() < now;
-  document.getElementById("sunLabel").textContent = sunsetPassed ? "Sunrise" : "Sunset";
-  document.getElementById("sun").textContent = fmtTime(sunsetPassed ? dl.sunrise[1] : dl.sunset[0]);
-
-  document.getElementById("week").innerHTML = dl.time.slice(0, 5).map((t, i) => {
-    const [dk] = describe(dl.weather_code[i]);
-    const name = i === 0 ? "Today" : new Date(t + "T12:00:00").toLocaleDateString("en-US", { weekday: "short" });
-    const pop = dl.precipitation_probability_max[i];
-    return `<div class="day"><div class="dn">${name}</div>${icon(dk)}
-      <div class="hl">${Math.round(dl.temperature_2m_max[i])}°<small>${Math.round(dl.temperature_2m_min[i])}°</small></div>
-      <div class="pop">${pop >= 20 ? pop + "% rain" : ""}</div></div>`;
+  $("nowIcon").innerHTML = icon(k);
+  $("nowTemp").textContent = Math.round(c.temperature_2m) + "°";
+  $("nowCond").textContent = txt;
+  $("nowSub").textContent = `H ${Math.round(dl.temperature_2m_max[0])}°  L ${Math.round(dl.temperature_2m_min[0])}°`;
+  $("week").innerHTML = dl.time.slice(1, 5).map((t, j) => {
+    const i = j + 1, [dk] = describe(dl.weather_code[i]);
+    const name = new Date(t + "T12:00:00").toLocaleDateString("en-US", { weekday: "short" });
+    return `<div class="day"><div class="dn">${name}</div>${icon(dk)}<div class="hl">${Math.round(dl.temperature_2m_max[i])}°</div></div>`;
   }).join("");
-  document.getElementById("note").textContent = isSample
-    ? "Sample weather shown here. Live weather loads on the TV."
-    : "Weather by Open-Meteo · updated " + new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  $("note").textContent = isSample ? "Sample weather here. Live weather shows on the TV." : "Weather by Open-Meteo";
 }
-
 function sample() {
-  const base = new Date(); const day = i => { const d = new Date(base); d.setDate(d.getDate() + i); return d.toISOString().slice(0, 10); };
+  const day = i => { const d = new Date(); d.setDate(d.getDate() + i); return d.toISOString().slice(0, 10); };
   return {
-    current: { temperature_2m: 71, apparent_temperature: 70, weather_code: 1 },
-    daily: {
-      time: [0,1,2,3,4].map(day),
-      weather_code: [1, 2, 61, 3, 0],
-      temperature_2m_max: [82, 79, 72, 75, 80],
-      temperature_2m_min: [61, 60, 57, 55, 58],
-      precipitation_probability_max: [5, 10, 60, 15, 0],
-      sunrise: [day(0) + "T07:31", day(1) + "T07:32"],
-      sunset: [day(0) + "T18:52", day(1) + "T18:51"]
-    }
+    current: { temperature_2m: 71, weather_code: 1 },
+    daily: { time: [0,1,2,3,4].map(day), weather_code: [1, 2, 61, 3, 0],
+      temperature_2m_max: [82, 79, 72, 75, 80], temperature_2m_min: [61, 60, 57, 55, 58] }
   };
 }
-
 let haveLive = false;
 async function loadWeather() {
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
-    `&current=temperature_2m,apparent_temperature,weather_code` +
-    `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset` +
-    `&temperature_unit=fahrenheit&timezone=${encodeURIComponent(TZ)}&forecast_days=6`;
+    `&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min` +
+    `&temperature_unit=fahrenheit&timezone=${encodeURIComponent(TZ)}&forecast_days=5`;
   try {
     const r = await fetch(url);
     if (!r.ok) throw new Error(r.status);
-    render(await r.json(), false);
-    haveLive = true;
-  } catch (e) {
-    if (!haveLive) render(sample(), true);
-  }
+    render(await r.json(), false); haveLive = true;
+  } catch (e) { if (!haveLive) render(sample(), true); }
 }
 
-tick();
-setInterval(tick, 1000);
-loadWeather();
-setInterval(loadWeather, 15 * 60 * 1000);
-// Reload every 6 hours to pick up dashboard changes.
+tick(); setInterval(tick, 1000);
+loadWeather(); setInterval(loadWeather, 15 * 60 * 1000);
 setTimeout(() => location.reload(), 6 * 60 * 60 * 1000);
-try { navigator.wakeLock && navigator.wakeLock.request("screen").catch(() => {}); } catch (e) {}
 </script>
