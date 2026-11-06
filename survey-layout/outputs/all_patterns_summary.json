@@ -1,0 +1,1375 @@
+[
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "existing_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 4,
+  "passing": 4,
+  "road_area": 0,
+  "remainder": 0,
+  "passing_area": 632.0,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "corner",
+    "area": 154.7,
+    "front": 10.0,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 159.6,
+    "front": 10.0,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 159.6,
+    "front": 10.0,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 4,
+    "type": "corner",
+    "area": 158.3,
+    "front": 10.0,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   }
+  ],
+  "score": 262.05
+ },
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "single_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 9,
+  "passing": 6,
+  "road_area": 240.0,
+  "remainder": 268.9,
+  "passing_area": 783.5,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 119.7,
+    "front": 11.0,
+    "depth": 16.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 151.3,
+    "front": 8.2,
+    "depth": 16.1,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 112.7,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 7,
+    "type": "residential",
+    "area": 125.1,
+    "front": 10.2,
+    "depth": 16.3,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 8,
+    "type": "residential",
+    "area": 123.1,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 9,
+    "type": "remainder",
+    "area": 268.9,
+    "front": 10.8,
+    "depth": 51.1,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 293.85
+ },
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "cul_de_sac",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 9,
+  "passing": 6,
+  "road_area": 240.0,
+  "remainder": 268.9,
+  "passing_area": 783.5,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 119.7,
+    "front": 11.0,
+    "depth": 16.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 151.3,
+    "front": 8.2,
+    "depth": 16.1,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 112.7,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 7,
+    "type": "residential",
+    "area": 125.1,
+    "front": 10.2,
+    "depth": 16.3,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 8,
+    "type": "residential",
+    "area": 123.1,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 9,
+    "type": "remainder",
+    "area": 268.9,
+    "front": 10.8,
+    "depth": 51.1,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 293.85
+ },
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "loop_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 9,
+  "passing": 6,
+  "road_area": 240.0,
+  "remainder": 268.9,
+  "passing_area": 783.5,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 119.7,
+    "front": 11.0,
+    "depth": 16.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 151.3,
+    "front": 8.2,
+    "depth": 16.1,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 112.7,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 7,
+    "type": "residential",
+    "area": 125.1,
+    "front": 10.2,
+    "depth": 16.3,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 8,
+    "type": "residential",
+    "area": 123.1,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 9,
+    "type": "remainder",
+    "area": 268.9,
+    "front": 10.8,
+    "depth": 51.1,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 293.85
+ },
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "t_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 9,
+  "passing": 6,
+  "road_area": 240.0,
+  "remainder": 268.9,
+  "passing_area": 783.5,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 119.7,
+    "front": 11.0,
+    "depth": 16.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 151.3,
+    "front": 8.2,
+    "depth": 16.1,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 112.7,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 7,
+    "type": "residential",
+    "area": 125.1,
+    "front": 10.2,
+    "depth": 16.3,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 8,
+    "type": "residential",
+    "area": 123.1,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 9,
+    "type": "remainder",
+    "area": 268.9,
+    "front": 10.8,
+    "depth": 51.1,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 293.85
+ },
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "spine_branch",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 4,
+  "passing": 1,
+  "road_area": 729.6,
+  "remainder": 147.0,
+  "passing_area": 128.0,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 126.2,
+    "front": 6.0,
+    "depth": 16.3,
+    "ok": false,
+    "why": [
+     "frontage"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 110.6,
+    "front": 9.2,
+    "depth": 12.8,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 4,
+    "type": "remainder",
+    "area": 147.0,
+    "front": 3.0,
+    "depth": 31.9,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 205.91
+ },
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "cluster",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 9,
+  "passing": 6,
+  "road_area": 240.0,
+  "remainder": 268.9,
+  "passing_area": 783.5,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 119.7,
+    "front": 11.0,
+    "depth": 16.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 151.3,
+    "front": 8.2,
+    "depth": 16.1,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 112.7,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 7,
+    "type": "residential",
+    "area": 125.1,
+    "front": 10.2,
+    "depth": 16.3,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 8,
+    "type": "residential",
+    "area": 123.1,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 9,
+    "type": "remainder",
+    "area": 268.9,
+    "front": 10.8,
+    "depth": 51.1,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 293.85
+ },
+ {
+  "scen": "A_lot120_road6",
+  "pattern": "large_lot_rural",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 9,
+  "passing": 6,
+  "road_area": 240.0,
+  "remainder": 268.9,
+  "passing_area": 783.5,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 119.7,
+    "front": 11.0,
+    "depth": 16.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 151.3,
+    "front": 8.2,
+    "depth": 16.1,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 112.7,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 128.0,
+    "front": 8.2,
+    "depth": 16.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 7,
+    "type": "residential",
+    "area": 125.1,
+    "front": 10.2,
+    "depth": 16.3,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 8,
+    "type": "residential",
+    "area": 123.1,
+    "front": 8.2,
+    "depth": 15.5,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 9,
+    "type": "remainder",
+    "area": 268.9,
+    "front": 10.8,
+    "depth": 51.1,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 293.85
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "existing_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 3,
+  "passing": 3,
+  "road_area": 0,
+  "remainder": 0,
+  "passing_area": 671.1,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "corner",
+    "area": 220.5,
+    "front": 13.3,
+    "depth": 17.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 226.0,
+    "front": 13.3,
+    "depth": 17.0,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "corner",
+    "area": 224.6,
+    "front": 13.3,
+    "depth": 17.0,
+    "ok": true,
+    "why": []
+   }
+  ],
+  "score": 264.11
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "single_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 7,
+  "passing": 1,
+  "road_area": 320.0,
+  "remainder": 188.3,
+  "passing_area": 193.7,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 150.7,
+    "front": 12.6,
+    "depth": 17.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 193.7,
+    "front": 10.2,
+    "depth": 17.4,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 136.4,
+    "front": 10.2,
+    "depth": 14.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 159.1,
+    "front": 10.2,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 140.8,
+    "front": 10.2,
+    "depth": 15.7,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 129.7,
+    "front": 10.2,
+    "depth": 15.8,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 7,
+    "type": "remainder",
+    "area": 188.3,
+    "front": 14.4,
+    "depth": 41.2,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 245.9
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "cul_de_sac",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 7,
+  "passing": 1,
+  "road_area": 320.0,
+  "remainder": 188.3,
+  "passing_area": 193.7,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 150.7,
+    "front": 12.6,
+    "depth": 17.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 193.7,
+    "front": 10.2,
+    "depth": 17.4,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 136.4,
+    "front": 10.2,
+    "depth": 14.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 159.1,
+    "front": 10.2,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 140.8,
+    "front": 10.2,
+    "depth": 15.7,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 129.7,
+    "front": 10.2,
+    "depth": 15.8,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 7,
+    "type": "remainder",
+    "area": 188.3,
+    "front": 14.4,
+    "depth": 41.2,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 245.9
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "loop_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 7,
+  "passing": 1,
+  "road_area": 320.0,
+  "remainder": 188.3,
+  "passing_area": 193.7,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 150.7,
+    "front": 12.6,
+    "depth": 17.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 193.7,
+    "front": 10.2,
+    "depth": 17.4,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 136.4,
+    "front": 10.2,
+    "depth": 14.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 159.1,
+    "front": 10.2,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 140.8,
+    "front": 10.2,
+    "depth": 15.7,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 129.7,
+    "front": 10.2,
+    "depth": 15.8,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 7,
+    "type": "remainder",
+    "area": 188.3,
+    "front": 14.4,
+    "depth": 41.2,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 245.9
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "t_road",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 7,
+  "passing": 1,
+  "road_area": 320.0,
+  "remainder": 188.3,
+  "passing_area": 193.7,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 150.7,
+    "front": 12.6,
+    "depth": 17.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 193.7,
+    "front": 10.2,
+    "depth": 17.4,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 136.4,
+    "front": 10.2,
+    "depth": 14.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 159.1,
+    "front": 10.2,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 140.8,
+    "front": 10.2,
+    "depth": 15.7,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 129.7,
+    "front": 10.2,
+    "depth": 15.8,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 7,
+    "type": "remainder",
+    "area": 188.3,
+    "front": 14.4,
+    "depth": 41.2,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 245.9
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "spine_branch",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 2,
+  "passing": 0,
+  "road_area": 972.8,
+  "remainder": 0,
+  "passing_area": 0,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 134.5,
+    "front": 6.6,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 146.9,
+    "front": 9.4,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   }
+  ],
+  "score": 132.09
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "cluster",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 7,
+  "passing": 1,
+  "road_area": 320.0,
+  "remainder": 188.3,
+  "passing_area": 193.7,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 150.7,
+    "front": 12.6,
+    "depth": 17.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 193.7,
+    "front": 10.2,
+    "depth": 17.4,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 136.4,
+    "front": 10.2,
+    "depth": 14.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 159.1,
+    "front": 10.2,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 140.8,
+    "front": 10.2,
+    "depth": 15.7,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 129.7,
+    "front": 10.2,
+    "depth": 15.8,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 7,
+    "type": "remainder",
+    "area": 188.3,
+    "front": 14.4,
+    "depth": 41.2,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 245.9
+ },
+ {
+  "scen": "B_lot160_road8",
+  "pattern": "large_lot_rural",
+  "shape": "ParcelShape.CORRIDOR",
+  "n_lots": 7,
+  "passing": 1,
+  "road_area": 320.0,
+  "remainder": 188.3,
+  "passing_area": 193.7,
+  "lot_detail": [
+   {
+    "id": 1,
+    "type": "residential",
+    "area": 150.7,
+    "front": 12.6,
+    "depth": 17.0,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 2,
+    "type": "residential",
+    "area": 193.7,
+    "front": 10.2,
+    "depth": 17.4,
+    "ok": true,
+    "why": []
+   },
+   {
+    "id": 3,
+    "type": "residential",
+    "area": 136.4,
+    "front": 10.2,
+    "depth": 14.5,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 4,
+    "type": "residential",
+    "area": 159.1,
+    "front": 10.2,
+    "depth": 16.2,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 5,
+    "type": "residential",
+    "area": 140.8,
+    "front": 10.2,
+    "depth": 15.7,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 6,
+    "type": "residential",
+    "area": 129.7,
+    "front": 10.2,
+    "depth": 15.8,
+    "ok": false,
+    "why": [
+     "area"
+    ]
+   },
+   {
+    "id": 7,
+    "type": "remainder",
+    "area": 188.3,
+    "front": 14.4,
+    "depth": 41.2,
+    "ok": false,
+    "why": [
+     "area",
+     "frontage",
+     "depth",
+     "shape",
+     "buildable",
+     "access"
+    ]
+   }
+  ],
+  "score": 245.9
+ }
+]

@@ -1,0 +1,1288 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ],
+            [
+              45.717161735325874,
+              8.196652308932247
+            ],
+            [
+              48.154598223278086,
+              4.775188813449083
+            ],
+            [
+              38.92949368010499,
+              -9.851220216911555
+            ],
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 1,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 119.7,
+        "frontage_m": 11.0,
+        "depth_m": 16.0,
+        "width_min_m": 10.8,
+        "shape_quality": 0.646,
+        "passes_all": false,
+        "passes_area": false,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ],
+            [
+              45.717161735325874,
+              8.196652308932247
+            ],
+            [
+              48.154598223278086,
+              4.775188813449083
+            ],
+            [
+              38.92949368010499,
+              -9.851220216911555
+            ],
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 1,
+        "type": "buildable_envelope",
+        "area_sqm": 119.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.044040109662326,
+              5.428842343543841
+            ],
+            [
+              41.075413424037805,
+              14.71233896611998
+            ],
+            [
+              45.717161735325874,
+              8.196652308932245
+            ],
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ],
+            [
+              28.044040109662326,
+              5.428842343543841
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 2,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 128.0,
+        "frontage_m": 8.2,
+        "depth_m": 16.0,
+        "width_min_m": 8.0,
+        "shape_quality": 0.698,
+        "passes_all": true,
+        "passes_area": true,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": [
+          "Tight area: 128m\u00b2 (min 120m\u00b2)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              28.044040109662326,
+              5.428842343543841
+            ],
+            [
+              41.075413424037805,
+              14.71233896611998
+            ],
+            [
+              45.717161735325874,
+              8.196652308932245
+            ],
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ],
+            [
+              28.044040109662326,
+              5.428842343543841
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 2,
+        "type": "buildable_envelope",
+        "area_sqm": 128.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              27.856199844904996,
+              5.6695619557239265
+            ],
+            [
+              27.648094272472107,
+              5.892994199311586
+            ],
+            [
+              27.42130720142746,
+              6.097438620021041
+            ],
+            [
+              21.95780571077964,
+              10.606663207209644
+            ],
+            [
+              31.35279004626023,
+              21.989886626008996
+            ],
+            [
+              37.866129780783616,
+              18.222599595082237
+            ],
+            [
+              37.8751598843274,
+              18.215146725343992
+            ],
+            [
+              38.880119873537176,
+              17.30919356900323
+            ],
+            [
+              40.04047153293767,
+              16.063383706347437
+            ],
+            [
+              40.65807000887352,
+              15.271923654891726
+            ],
+            [
+              28.044040109662326,
+              5.428842343543841
+            ],
+            [
+              27.856199844904996,
+              5.6695619557239265
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 3,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 151.3,
+        "frontage_m": 8.2,
+        "depth_m": 16.1,
+        "width_min_m": 11.4,
+        "shape_quality": 0.75,
+        "passes_all": true,
+        "passes_area": true,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              27.856199844904996,
+              5.6695619557239265
+            ],
+            [
+              27.648094272472107,
+              5.892994199311586
+            ],
+            [
+              27.42130720142746,
+              6.097438620021041
+            ],
+            [
+              21.95780571077964,
+              10.606663207209644
+            ],
+            [
+              31.35279004626023,
+              21.989886626008996
+            ],
+            [
+              37.866129780783616,
+              18.222599595082237
+            ],
+            [
+              37.8751598843274,
+              18.215146725343992
+            ],
+            [
+              38.880119873537176,
+              17.30919356900323
+            ],
+            [
+              40.04047153293767,
+              16.063383706347437
+            ],
+            [
+              40.65807000887352,
+              15.271923654891726
+            ],
+            [
+              28.044040109662326,
+              5.428842343543841
+            ],
+            [
+              27.856199844904996,
+              5.6695619557239265
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 3,
+        "type": "buildable_envelope",
+        "area_sqm": 151.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.33165141657219,
+              26.050882302583847
+            ],
+            [
+              31.352790046260232,
+              21.989886626009
+            ],
+            [
+              35.10080574994994,
+              19.82205084164494
+            ],
+            [
+              31.35279004626023,
+              21.989886626008996
+            ],
+            [
+              21.95780571077964,
+              10.606663207209644
+            ],
+            [
+              15.787837338972254,
+              15.698960359860552
+            ],
+            [
+              24.33165141657219,
+              26.050882302583847
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 4,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 112.7,
+        "frontage_m": 8.2,
+        "depth_m": 15.5,
+        "width_min_m": 12.3,
+        "shape_quality": 0.505,
+        "passes_all": false,
+        "passes_area": false,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.33165141657219,
+              26.050882302583847
+            ],
+            [
+              31.352790046260232,
+              21.989886626009
+            ],
+            [
+              35.10080574994994,
+              19.82205084164494
+            ],
+            [
+              31.35279004626023,
+              21.989886626008996
+            ],
+            [
+              21.95780571077964,
+              10.606663207209644
+            ],
+            [
+              15.787837338972254,
+              15.698960359860552
+            ],
+            [
+              24.33165141657219,
+              26.050882302583847
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 4,
+        "type": "buildable_envelope",
+        "area_sqm": 112.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.94718506284323,
+              -14.921904071802572
+            ],
+            [
+              20.91581174846775,
+              -24.20540069437871
+            ],
+            [
+              16.27406343717968,
+              -17.689714037190974
+            ],
+            [
+              29.305436751555163,
+              -8.406217414614833
+            ],
+            [
+              33.94718506284323,
+              -14.921904071802572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 5,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 128.0,
+        "frontage_m": 8.2,
+        "depth_m": 16.0,
+        "width_min_m": 8.0,
+        "shape_quality": 0.698,
+        "passes_all": true,
+        "passes_area": true,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": [
+          "Tight area: 128m\u00b2 (min 120m\u00b2)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              33.94718506284323,
+              -14.921904071802572
+            ],
+            [
+              20.91581174846775,
+              -24.20540069437871
+            ],
+            [
+              16.27406343717968,
+              -17.689714037190974
+            ],
+            [
+              29.305436751555163,
+              -8.406217414614833
+            ],
+            [
+              33.94718506284323,
+              -14.921904071802572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 5,
+        "type": "buildable_envelope",
+        "area_sqm": 128.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.305436751555163,
+              -8.406217414614833
+            ],
+            [
+              16.27406343717968,
+              -17.689714037190974
+            ],
+            [
+              11.632315125891612,
+              -11.174027380003238
+            ],
+            [
+              24.66368844026709,
+              -1.8905307574270935
+            ],
+            [
+              29.305436751555163,
+              -8.406217414614833
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 6,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 128.0,
+        "frontage_m": 8.2,
+        "depth_m": 16.0,
+        "width_min_m": 8.0,
+        "shape_quality": 0.698,
+        "passes_all": true,
+        "passes_area": true,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": [
+          "Tight area: 128m\u00b2 (min 120m\u00b2)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              29.305436751555163,
+              -8.406217414614833
+            ],
+            [
+              16.27406343717968,
+              -17.689714037190974
+            ],
+            [
+              11.632315125891612,
+              -11.174027380003238
+            ],
+            [
+              24.66368844026709,
+              -1.8905307574270935
+            ],
+            [
+              29.305436751555163,
+              -8.406217414614833
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 6,
+        "type": "buildable_envelope",
+        "area_sqm": 128.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.610169553902555,
+              0.9920222615786907
+            ],
+            [
+              24.66368844026709,
+              -1.8905307574270935
+            ],
+            [
+              11.632315125891614,
+              -11.174027380003237
+            ],
+            [
+              10.800991756233385,
+              -10.007087204828728
+            ],
+            [
+              10.052263549611835,
+              -9.389134845119717
+            ],
+            [
+              9.353,
+              -8.298
+            ],
+            [
+              7.743931404607002,
+              -6.870431176673677
+            ],
+            [
+              17.627315636091662,
+              5.104551092955975
+            ],
+            [
+              22.610169553902555,
+              0.9920222615786907
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 7,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 125.1,
+        "frontage_m": 10.2,
+        "depth_m": 16.3,
+        "width_min_m": 9.9,
+        "shape_quality": 0.7,
+        "passes_all": true,
+        "passes_area": true,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": [
+          "Tight area: 125m\u00b2 (min 120m\u00b2)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.610169553902555,
+              0.9920222615786907
+            ],
+            [
+              24.66368844026709,
+              -1.8905307574270935
+            ],
+            [
+              11.632315125891614,
+              -11.174027380003237
+            ],
+            [
+              10.800991756233385,
+              -10.007087204828728
+            ],
+            [
+              10.052263549611835,
+              -9.389134845119717
+            ],
+            [
+              9.353,
+              -8.298
+            ],
+            [
+              7.743931404607002,
+              -6.870431176673677
+            ],
+            [
+              17.627315636091662,
+              5.104551092955975
+            ],
+            [
+              22.610169553902555,
+              0.9920222615786907
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 7,
+        "type": "buildable_envelope",
+        "area_sqm": 125.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.627315636091662,
+              5.104551092955975
+            ],
+            [
+              7.743931404607002,
+              -6.870431176673677
+            ],
+            [
+              1.7558314939736903,
+              -1.5577771556713016
+            ],
+            [
+              11.457347264284277,
+              10.19684824560688
+            ],
+            [
+              17.627315636091662,
+              5.104551092955975
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 8,
+        "lot_type": "residential",
+        "is_residential": true,
+        "area_sqm": 123.1,
+        "frontage_m": 8.2,
+        "depth_m": 15.5,
+        "width_min_m": 8.0,
+        "shape_quality": 0.707,
+        "passes_all": true,
+        "passes_area": true,
+        "passes_frontage": true,
+        "passes_depth": true,
+        "passes_shape": true,
+        "passes_buildable": true,
+        "passes_service": true,
+        "constraint_conflicts": [],
+        "warnings": [
+          "Tight area: 123m\u00b2 (min 120m\u00b2)"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.627315636091662,
+              5.104551092955975
+            ],
+            [
+              7.743931404607002,
+              -6.870431176673677
+            ],
+            [
+              1.7558314939736903,
+              -1.5577771556713016
+            ],
+            [
+              11.457347264284277,
+              10.19684824560688
+            ],
+            [
+              17.627315636091662,
+              5.104551092955975
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "buildable_envelopes",
+        "lot_id": 8,
+        "type": "buildable_envelope",
+        "area_sqm": 123.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ],
+            [
+              38.92949368010499,
+              -9.851220216911555
+            ],
+            [
+              43.257620868817,
+              -2.988971848748109
+            ],
+            [
+              38.64120916313083,
+              -10.308295499110326
+            ],
+            [
+              27.407648034205657,
+              5.460410482306704
+            ],
+            [
+              11.678117699868318,
+              18.442558478410348
+            ],
+            [
+              7.858894835380137,
+              13.815082199554809
+            ],
+            [
+              22.979206360079722,
+              1.3357444324039167
+            ],
+            [
+              34.35441547891747,
+              -14.631794802347068
+            ],
+            [
+              36.797797975362876,
+              -12.891139185614037
+            ],
+            [
+              24.122,
+              -29.537
+            ],
+            [
+              20.395,
+              -25.528
+            ],
+            [
+              9.353,
+              -8.298
+            ],
+            [
+              10.052263549611835,
+              -9.389134845119717
+            ],
+            [
+              10.800991756233385,
+              -10.007087204828728
+            ],
+            [
+              11.632315125891614,
+              -11.174027380003237
+            ],
+            [
+              24.66368844026709,
+              -1.8905307574270935
+            ],
+            [
+              22.610169553902555,
+              0.9920222615786907
+            ],
+            [
+              17.627315636091662,
+              5.104551092955975
+            ],
+            [
+              11.457347264284277,
+              10.19684824560688
+            ],
+            [
+              1.7558314939736903,
+              -1.5577771556713016
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              17.089,
+              30.24
+            ],
+            [
+              24.33165141657219,
+              26.050882302583847
+            ],
+            [
+              15.787837338972254,
+              15.698960359860552
+            ],
+            [
+              21.95780571077964,
+              10.606663207209644
+            ],
+            [
+              27.42130720142746,
+              6.097438620021041
+            ],
+            [
+              27.648094272472107,
+              5.892994199311586
+            ],
+            [
+              27.856199844904996,
+              5.6695619557239265
+            ],
+            [
+              28.044040109662326,
+              5.428842343543841
+            ],
+            [
+              32.685788420950395,
+              -1.0868443136438994
+            ]
+          ],
+          [
+            [
+              11.632315125891612,
+              -11.174027380003238
+            ],
+            [
+              16.27406343717968,
+              -17.689714037190974
+            ],
+            [
+              20.91581174846775,
+              -24.20540069437871
+            ],
+            [
+              33.94718506284323,
+              -14.921904071802572
+            ],
+            [
+              29.305436751555163,
+              -8.406217414614833
+            ],
+            [
+              24.66368844026709,
+              -1.8905307574270935
+            ],
+            [
+              11.632315125891612,
+              -11.174027380003238
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "lots",
+        "lot_id": 9,
+        "lot_type": "remainder",
+        "is_residential": false,
+        "area_sqm": 268.9,
+        "frontage_m": 10.8,
+        "depth_m": 51.1,
+        "width_min_m": 35.3,
+        "shape_quality": 0.026,
+        "passes_all": null,
+        "passes_area": null,
+        "passes_frontage": null,
+        "passes_depth": null,
+        "passes_shape": null,
+        "passes_buildable": null,
+        "passes_service": null,
+        "constraint_conflicts": [],
+        "warnings": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.979206360079722,
+              1.3357444324039167
+            ],
+            [
+              7.858894835380137,
+              13.815082199554809
+            ],
+            [
+              11.678117699868318,
+              18.442558478410348
+            ],
+            [
+              27.407648034205657,
+              5.460410482306704
+            ],
+            [
+              39.24118047180827,
+              -11.150483568881013
+            ],
+            [
+              34.35441547891747,
+              -14.631794802347068
+            ],
+            [
+              22.979206360079722,
+              1.3357444324039167
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "roads",
+        "road_id": 0,
+        "name": "Irregular Road A",
+        "road_type": "local_residential",
+        "row_width_m": 6,
+        "is_cul_de_sac": false,
+        "is_future_stub": false,
+        "length_m": 40.0,
+        "area_sqm": 240.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            36.79779797536287,
+            -12.89113918561404
+          ],
+          [
+            25.19342719714269,
+            3.39807745735531
+          ],
+          [
+            9.768506267624227,
+            16.128820338982578
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "road_centerlines",
+        "road_id": 0,
+        "name": "Irregular Road A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            39.648410887882505,
+            -10.860374299425509
+          ],
+          [
+            32.685788420950395,
+            -1.0868443136438994
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 1,
+        "frontage_m": 11.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            32.685788420950395,
+            -1.0868443136438994
+          ],
+          [
+            28.044040109662326,
+            5.428842343543841
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 2,
+        "frontage_m": 8.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            28.044040109662326,
+            5.428842343543841
+          ],
+          [
+            27.856199844904996,
+            5.6695619557239265
+          ],
+          [
+            27.648094272472107,
+            5.892994199311586
+          ],
+          [
+            27.42130720142746,
+            6.097438620021041
+          ],
+          [
+            21.95780571077964,
+            10.606663207209644
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 3,
+        "frontage_m": 8.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            21.95780571077964,
+            10.606663207209644
+          ],
+          [
+            15.787837338972254,
+            15.698960359860552
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 4,
+        "frontage_m": 8.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            33.94718506284323,
+            -14.921904071802572
+          ],
+          [
+            29.305436751555163,
+            -8.406217414614833
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 5,
+        "frontage_m": 8.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            29.305436751555163,
+            -8.406217414614833
+          ],
+          [
+            24.66368844026709,
+            -1.8905307574270935
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 6,
+        "frontage_m": 8.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.66368844026709,
+            -1.8905307574270935
+          ],
+          [
+            22.610169553902555,
+            0.9920222615786907
+          ],
+          [
+            17.627315636091662,
+            5.104551092955975
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 7,
+        "frontage_m": 10.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            17.627315636091662,
+            5.104551092955975
+          ],
+          [
+            11.457347264284277,
+            10.19684824560688
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 8,
+        "frontage_m": 8.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            32.685788420950395,
+            -1.0868443136438994
+          ],
+          [
+            38.92949368010499,
+            -9.851220216911555
+          ]
+        ]
+      },
+      "properties": {
+        "layer": "frontage_lines",
+        "lot_id": 9,
+        "frontage_m": 10.8
+      }
+    }
+  ],
+  "properties": {
+    "name": "B",
+    "pattern": "single_road",
+    "total_lots": 9,
+    "residential_lots": 8,
+    "remainder_lots": 1,
+    "passing_lots": 6,
+    "failed_lots": 2,
+    "gross_area_sqm": 1576.6,
+    "road_area_sqm": 240.0,
+    "constraint_area_sqm": 0.0,
+    "passing_lot_area_sqm": 783.5,
+    "failing_lot_area_sqm": 232.4,
+    "remainder_area_sqm": 268.9,
+    "saleable_land_pct": 49.7,
+    "developable_used_pct": 76.0,
+    "score": 293.8
+  }
+}
