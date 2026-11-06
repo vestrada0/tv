@@ -1,0 +1,47 @@
+Lot 1: 282.46 m2, frontage 11.81 m
+   side 1: 0.00 m
+   side 2: 17.84 m
+   side 3: 7.64 m
+   side 4: 10.97 m
+   side 5: 24.68 m
+   side 6: 11.81 m
+Lot 2: 282.23 m2, frontage 15.79 m
+   side 1: 5.50 m
+   side 2: 5.69 m
+   side 3: 24.68 m
+   side 4: 8.54 m
+   side 5: 8.09 m
+   side 6: 19.14 m
+   side 7: 4.50 m
+Lot 3: 283.16 m2, frontage 7.63 m
+   side 1: 19.14 m
+   side 2: 1.91 m
+   side 3: 10.38 m
+   side 4: 12.39 m
+   side 5: 21.29 m
+   side 6: 0.00 m
+   side 7: 2.03 m
+   side 8: 5.50 m
+Lot 4: 280.57 m2, frontage 7.64 m
+   side 1: 9.26 m
+   side 2: 12.51 m
+   side 3: 3.66 m
+   side 4: 5.55 m
+   side 5: 5.50 m
+   side 6: 2.03 m
+   side 7: 21.29 m
+   side 8: 3.05 m
+   side 9: 10.04 m
+Lot 5: 285.93 m2, frontage 29.70 m
+   side 1: 1.98 m
+   side 2: 5.50 m
+   side 3: 10.68 m
+   side 4: 5.75 m
+   side 5: 6.70 m
+   side 6: 2.50 m
+   side 7: 10.50 m
+   side 8: 5.50 m
+   side 9: 4.50 m
+   side 10: 0.00 m
+   side 11: 5.55 m
+   side 12: 14.85 m
