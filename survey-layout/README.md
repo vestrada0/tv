@@ -32,3 +32,19 @@ Concept test only. Not a survey and not a legal subdivision plan.
 - The "existing_road" pattern assumes a street along the whole front edge, which this parcel does not have, so ignore it.
 - The road extends about 12 m² past the boundary.
 - subdivision-agent has no license; it was run locally and none of its code is included here.
+
+## Raúl Ruiz de Haro project (straight 4 m lane)
+Extracted from `Raúl_Ruiz_de_Haro_Proyecto.pdf` (see `scripts/geo2.py`). The printed dimensions match the drawing
+to within 0.02 m, and all six lot areas to within 0.2 m².
+
+| | Opción 2 | Ruiz de Haro project |
+|---|---|---|
+| Parcel | ~1,567 m² (estimated from lot areas) | 1,569.8 m² (from dimensions) |
+| Lots | 5 (131–376 m²) | 6 (232.00–238.00 m²) |
+| Saleable | 1,254 m² (80%) | 1,414.66 m² (90%) |
+| Road | ~308 m² circle | 155 m² lane, 4.0 m wide × 38.6 m |
+
+Open issues with the project:
+- The lane is 4.0 m wide and dead-ends about 62 m from Calle Libertad (38.6 m lane plus the 23.6 m passage), with no place to turn around.
+- One tree stands in the lane at its west end. Another is 0.6 m from the lane at the east entrance, in the 235.58 m² lot.
+- The "18.40 Mts." label near point 7 measures 15.6 m in this drawing as well. It is outside the parcel.
