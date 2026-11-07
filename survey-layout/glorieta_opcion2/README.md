@@ -14,3 +14,19 @@ Steady turn around the island with 0.30 m clearance:
 | Garbage or fire truck (~8 m) | 4.6–9.6 m | No. It would need the neighbour's ~20 m² and almost the full 20.4 m circle |
 
 Vehicle dimensions are typical, assumed values.
+
+## Driving in from the passage, around the island and back out
+
+Simulated: the vehicle drives in through the 4.1 m passage, goes clockwise round the island (the island is on the driver's right),
+then turns left back into the passage. Steering goes from straight to full lock over 1.5 m of travel, and the driver is assumed to be precise.
+Turning radii and dimensions are typical, assumed values. The scripts are `sim3.py`, `refine.py` and `drawpath2.py`.
+
+| Vehicle | Minimum clearance, pavement on own land | If the neighbour's ~20 m² were also paved |
+|---|---|---|
+| Car | 29 cm | 35 cm |
+| Pickup / SUV | 1 cm | 11 cm |
+| Delivery van | 0 cm, does not fit | 17 cm |
+| Garbage or fire truck | does not fit | does not fit |
+
+The tightest point is corner 13, at the passage mouth, where the vehicle swings back into the passage.
+The incoming and outgoing paths cross at the passage mouth, so two vehicles cannot use it at the same time.
