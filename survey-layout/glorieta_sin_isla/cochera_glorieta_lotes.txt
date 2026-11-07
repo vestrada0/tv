@@ -1,0 +1,37 @@
+Glorieta sin isla diametro 15.5 m; entrada recta de 7.0 m (ancho 4.06 m); vialidad 217.2 m2
+Lote 1: 49.00 m2, frente 7.16 m
+    lado 1: 6.84 m
+    lado 2: 7.00 m
+    lado 3: 7.16 m
+    lado 5: 7.01 m
+Lote 2: 325.91 m2, frente 9.50 m
+    lado 1: 7.64 m
+    lado 2: 19.51 m
+    lado 3: 0.74 m
+    lado 4: 19.70 m
+    lado 202: 7.00 m
+    lado 203: 6.84 m
+    lado 204: 7.01 m
+    lado 205: 17.84 m
+Lote 3: 325.91 m2, frente 9.50 m
+    lado 1: 9.26 m
+    lado 2: 10.38 m
+    lado 3: 3.19 m
+    lado 4: 25.89 m
+    lado 204: 19.70 m
+Lote 4: 325.91 m2, frente 9.82 m
+    lado 1: 12.25 m
+    lado 2: 10.04 m
+    lado 3: 7.77 m
+    lado 4: 17.95 m
+    lado 210: 25.89 m
+Lote 5: 325.91 m2, frente 23.32 m
+    lado 1: 1.49 m
+    lado 2: 12.51 m
+    lado 3: 18.51 m
+    lado 4: 1.98 m
+    lado 5: 5.50 m
+    lado 6: 10.68 m
+    lado 7: 8.25 m
+    lado 8: 7.12 m
+    lado 350: 17.95 m
